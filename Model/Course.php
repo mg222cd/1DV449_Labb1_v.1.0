@@ -2,7 +2,6 @@
 namespace Model;
 
 class Course{
-	//fields
 	private $name;
 	private $url;
 	private $code;
@@ -11,30 +10,40 @@ class Course{
 	private $latestArticle_header;
 	private $latestArticle_author;
 	private $latestArticle_dateAndTime;
-	private $default = "no information";
-	//others
-	private $data;
-	private $dom;
-	private $xpath;
 
-	public function __construct($data){
-		$this->data = $data;
-		$this->dom = new \DomDocument();
-	}
+	public function __construct($name, $url, $code, $urlSyllabus, $introduction, $latestArticle_header, $latestArticle_author, $latestArticle_dateAndTime){
 
-	//name:
-	public function setName(){
-		if ($this->dom->loadHTML($this->data)) {
-			$xpath = new \DOMXPath($this->dom);
-			$items = $xpath->query('//div[@id="header-wrapper"]//h1');
-			var_dump($items);
-		} 
-		else {
-			die("Fel uppstod vid inläsning av HTML");
-		}
 	}
 
 	public function getName(){
 		return $this->name;
 	}	
+
+	public function getUrl(){
+		return $this->url;
+	}
+
+	public function getCode(){
+		return $this->code;
+	}
+
+	public function getUrlSyllabus(){
+		return $this->urlSyllabus;
+	}
+
+	public function getIntroduction(){
+		return $this->introduction;
+	}
+
+	public function getLatestArticle_header(){
+		return $this->latestArticle_header;
+	}
+
+	public function getLatestArticle_author(){
+		return $this->latestArticle_author;
+	}
+
+	public function getLatestArticle_dateAndTime(){
+		return $this->latestArticle_dateAndTime;
+	}
 }

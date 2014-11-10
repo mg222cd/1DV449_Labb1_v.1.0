@@ -34,6 +34,8 @@ class WebscraperController{
 			$data = $this->curlView->curlGetRequest($course);
 			//skrapa informationen
 			$this->course = new \Model\Course($data);
+			//kursnamn
+			
 			
 		}
 		//nu ligger allt i arrayen $this->courseLinks
