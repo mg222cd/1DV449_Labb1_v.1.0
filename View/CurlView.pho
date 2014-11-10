@@ -1,0 +1,6 @@
+<?php
+namespaceView;
+
+class CurlView{
+	
+}
