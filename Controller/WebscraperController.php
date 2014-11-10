@@ -3,12 +3,10 @@ namespace Controller;
 
 require_once('Model/PageModel.php');
 require_once('View/CurlView.php');
-require_once('Model/Course.php');
 
 class WebscraperController{
 	private $curlView;
 	private $pageModel;
-	private $course;
 	private $url = "https://coursepress.lnu.se/kurser/";
 	private $courseLinks;
 
@@ -33,9 +31,7 @@ class WebscraperController{
 			//curl-getta adressen
 			$data = $this->curlView->curlGetRequest($course);
 			//skrapa informationen
-			$this->course = new \Model\Course($data);
-			//kursnamn
-			
+			$this->pageModel->getCourseInfo($data, $course);
 			
 		}
 		//nu ligger allt i arrayen $this->courseLinks

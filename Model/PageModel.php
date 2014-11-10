@@ -1,11 +1,24 @@
 <?php
 namespace Model;
 
+require_once('Model/Course.php');
+
 class PageModel{
+	private $course;
 	private $pages = array();
 	private $courses = array();
+	//fields to put into course-object
+	private $name;
+	private $url;
+	private $code;
+	private $urlSyllabus;
+	private $introduction;
+	private $latestArticle_header;
+	private $latestArticle_author;
+	private $latestArticle_dateAndTime;
 	
 	public function getNumberOfPages($data){
+		ini_set('max_execution_time', 300);
 		$dom = new \DomDocument();
 		if ($dom->loadHTML($data)) {
 			$xpath = new \DOMXPath($dom);
@@ -29,6 +42,7 @@ class PageModel{
 	}
 
 	public function getLinks($data){
+		ini_set('max_execution_time', 300);
 		$dom = new \DomDocument();
 		if ($dom->loadHTML($data)) {
 			$xpath = new \DOMXPath($dom);
@@ -40,6 +54,29 @@ class PageModel{
 				}
 			}
 			return $this->courses;
+		} 
+		else {
+			die("Fel uppstod vid inläsning av HTML");
+		}
+	}
+
+	public function getCourseInfo($data, $courseUrl){
+		//ini_set('max_execution_time', 300);
+		libxml_use_internal_errors(true);
+		$dom = new \DomDocument();
+		if ($dom->loadHTML($data)) {
+			$xpath = new \DOMXPath($dom);
+			//kursnamn
+			$item = $xpath->query('//div[@id="header-wrapper"]//h1/a');
+			foreach ($item as $value) {
+    			$this->name = $value->nodeValue;
+   			}
+   			//länk
+   			$this->url = $courseUrl;
+   			//temporär testkod:
+   			echo $this->name . $this->url . "<br />";
+   			//fortsätt med resten av informationen
+   			//läg in i array objektet
 		} 
 		else {
 			die("Fel uppstod vid inläsning av HTML");
