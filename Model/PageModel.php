@@ -94,12 +94,17 @@ class PageModel{
    				$this->introduction = utf8_decode($value->nodeValue);
    			}
    			//senaste inlägg - rubrik
+   			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/h1/a');
+   			foreach ($item as $value) {
+   				$this->latestArticle_header = utf8_decode($value->nodeValue);
+   			}
    			//senaste inlägg - författare
    			//senaste inlägg - datum och tid
    			//lägg in i arrayobjektet
    			//returnera
    			//temporär testkod:
-   			echo utf8_decode($this->name) . $this->url . $this->code . $this->urlSyllabus . "<br />" . utf8_decode($this->introduction) . "<br /><br />";
+   			echo utf8_decode($this->name) . $this->url . $this->code . $this->urlSyllabus . utf8_decode($this->introduction) . 
+   			"<br />" . utf8_decode($this->latestArticle_header) . "<br /><br />";
 		} 
 		else {
 			die("Fel uppstod vid inläsning av HTML");
