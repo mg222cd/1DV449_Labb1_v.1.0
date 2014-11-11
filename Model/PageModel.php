@@ -73,10 +73,29 @@ class PageModel{
    			}
    			//länk
    			$this->url = $courseUrl;
+   			//kurskod
+   			$item = $xpath->query('//div[@id="header-wrapper"]//li/a');
+   			$tempArr = array();
+   			foreach ($item as $value) {
+   				$tempArr[] = $value->nodeValue;
+   			}
+			$tempArrReversed = array_reverse($tempArr);
+			$this->code = $tempArrReversed[0];
+   			//kursplan
+   			$item = $xpath->query('//ul[@class="sub-menu"]//li[@class="menu-item menu-item-type-custom menu-item-object-custom"]/a');
+   			foreach ($item as $value) {
+   				if (strpos($value->nodeValue, 'Kursplan') !== FALSE) {
+					$this->urlSyllabus = $value->getAttribute("href");
+				}
+   			}
+   			//introduktion
+   			//senaste inlägg - rubrik
+   			//senaste inlägg - författare
+   			//senaste inlägg - datum och tid
+   			//lägg in i arrayobjektet
+   			//returnera
    			//temporär testkod:
-   			echo $this->name . $this->url . "<br />";
-   			//fortsätt med resten av informationen
-   			//läg in i array objektet
+   			echo $this->name . $this->url . $this->code . $this->urlSyllabus . "<br />";
 		} 
 		else {
 			die("Fel uppstod vid inläsning av HTML");
