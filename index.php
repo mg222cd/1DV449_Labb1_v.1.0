@@ -11,5 +11,11 @@ $file = 'file.json';
 
 //$jsonView->setContentHeader('application/json;');
 header('Content-type: application/json; charset=UTF-8');
-file_put_contents($file, $controller->doControl());
-//echo $controller->doControl();
+//file_put_contents($file, $controller->doControl());
+echo $controller->doControl();
+
+//om tiden gått ut
+//...gör en ny skrapning
+//...och visa filen
+//Annars
+//...visa cache
