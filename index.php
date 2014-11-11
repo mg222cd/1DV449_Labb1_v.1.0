@@ -8,5 +8,5 @@ $controller = new \Controller\WebscraperController();
 $jsonView = new \View\JsonView();
 
 //$jsonView->setContentHeader('application/json;');
-header('Content-type: application/json; charset=utf-8');
+header('Content-type: application/json; charset=UTF-8');
 echo $controller->doControl();

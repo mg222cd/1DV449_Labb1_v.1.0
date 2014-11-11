@@ -37,7 +37,8 @@ class WebscraperController{
 		// 5 - parse to JSON-format
 		//var_dump($this->courseInfo);
 		//die();
-		return json_encode($this->courseInfo, JSON_PRETTY_PRINT);
+		$json = json_encode($this->courseInfo, JSON_PRETTY_PRINT);
+		return utf8_decode($json);
 		//echo json_last_error(); 
 		/*
 		foreach ($this->courseInfo as $course) {

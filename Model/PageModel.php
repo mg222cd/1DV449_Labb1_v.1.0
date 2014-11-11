@@ -11,7 +11,7 @@ class PageModel{
 	private $url;
 	private $code;
 	private $urlSyllabus;
-	private $introduction;
+	private $intro;
 	private $latestArticle_header;
 	private $latestArticle_author;
 	private $latestArticle_dateAndTime;
@@ -72,10 +72,10 @@ class PageModel{
 			//kursnamn
 			$item = $xpath->query('//div[@id="header-wrapper"]//h1/a');
 			foreach ($item as $value) {
-    			$this->name = utf8_encode($value->nodeValue);
+    			$this->name = $value->nodeValue;
    			}
    			//länk
-   			$this->url = utf8_encode($courseUrl);
+   			$this->url = $courseUrl;
    			//kurskod
    			$item = $xpath->query('//div[@id="header-wrapper"]//li/a');
    			$tempArr = array();
@@ -88,23 +88,24 @@ class PageModel{
    			$item = $xpath->query('//ul[@class="sub-menu"]//li[@class="menu-item menu-item-type-custom menu-item-object-custom"]/a');
    			foreach ($item as $value) {
    				if (strpos($value->nodeValue, 'Kursplan') !== FALSE) {
-					$this->urlSyllabus = utf8_encode($value->getAttribute("href"));
+					$this->urlSyllabus = $value->getAttribute("href");
 				}
    			}
    			//introduktion
    			$item = $xpath->query('//*[@id="content"]/article/div/p');
+   			//$item = $xpath->query('//div[@class= "entry-content"]/p');
    			foreach ($item as $value) {
-   				$this->introduction = utf8_encode($value->nodeValue);
+   				$this->intro = $value->nodeValue;
    			}
    			//senaste inlägg - rubrik
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/h1/a');
    			foreach ($item as $value) {
-   				$this->latestArticle_header = utf8_encode($value->nodeValue);
+   				$this->latestArticle_header = $value->nodeValue;
    			}
    			//senaste inlägg - författare
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/p/strong');
    			foreach ($item as $value) {
-   				$this->latestArticle_author = utf8_encode($value->nodeValue);
+   				$this->latestArticle_author = $value->nodeValue;
    			}
    			//senaste inlägg - datum och tid. formatet YYYY-MM-DD HH:MM
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/p');
@@ -116,13 +117,13 @@ class PageModel{
    			//lägg in i arrayobjektet
    			$this->courseList[] = new \Model\Course(
    				utf8_decode($this->name), 
-   				$this->url, 
-   				$this->code, 
-   				$this->urlSyllabus, 
-   				$this->introduction, 
-   				$this->latestArticle_header, 
-   				$this->latestArticle_author, 
-   				$this->latestArticle_dateAndTime
+   				utf8_decode($this->url), 
+   				utf8_decode($this->code), 
+   				utf8_decode($this->urlSyllabus), 
+   				utf8_encode($this->intro), 
+   				utf8_decode($this->latestArticle_header), 
+   				utf8_decode($this->latestArticle_author), 
+   				utf8_decode($this->latestArticle_dateAndTime)
    				);
    			return $this->courseList;
 		} 
