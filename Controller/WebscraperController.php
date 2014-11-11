@@ -35,35 +35,14 @@ class WebscraperController{
 			$this->courseInfo = $this->pageModel->getCourseInfo($data, $course);
 		}
 		// 5 - parse to JSON-format
-		return json_encode($this->courseInfo, JSON_PRETTY_PRINT);
 		
+		$json = array(
+			'site' => $this->url,
+    		'latest_scrape' => date('Y/m/d H:i:s'),
+    		'number_of_courses' => count($this->courseLinks),
+    		'courses' => $this->courseInfo
+			);
 		
-		/*
-		foreach ($this->courseInfo as $course) {
-			echo $course->getName();
-			echo $course->getUrl();
-			echo $course->getCode();
-			echo $course->getUrlSyllabus();
-			echo $course->getIntroduction();
-			echo $course->getLatestArticle_header();
-			echo $course->getLatestArticle_author();
-			echo $course->getLatestArticle_dateAndTime();
-		}
-		*/
-		//nu ligger allt i arrayen $this->courseLinks
-		//loopa igenom den och lägg all info på objekt.
-
-
-			//IDÉ OM FORTSÄTTNING:
-			//gör om frågan ovan så att endast kurslänken hämtas/returners från pageModel->scrapeInformation
-			//typ $this->courseLinks[] = $this->pageModel->scrapeInformation($this->data);
-			//$this->courseLinks .= $this->pageModel->scrapeInformation($data); <-- verkar tyvärr bara returnera 1 st kurs / sida (första eller sista)
-			//använd sedan arrayen och loopa igenom den och skrapa fram datat från varje länk.
-			//lägg in informationen i ny array, parsa till JSON och skriv ut på sidan.
-			//4 - curl geta länken tillhörande varje kurs
-			//5 skrapa datat på sidan innanför länken till varje kurs.
-			//Glöm ej heller jobbiga labbkrav som att identifiera sig på servern, skriva ut info om statistik (antal kurser och tid för skrapning)
-			//samt att datat ska cachas om det är mindre än X antal minuter sedan senaste skrapning
+		return json_encode($json, JSON_PRETTY_PRINT);
 	}
-
 }

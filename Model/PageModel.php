@@ -92,10 +92,9 @@ class PageModel{
 				}
    			}
    			//introduktion
-   			$item = $xpath->query('//*[@id="content"]/article/div/p');
-   			//$item = $xpath->query('//div[@class= "entry-content"]/p');
+   			$item = $xpath->query('//*[@id="content"]/article[1]/div/p');
    			foreach ($item as $value) {
-   				$this->intro = $value->nodeValue;
+   				$this->intro .= $value->nodeValue;
    			}
    			//senaste inlägg - rubrik
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/h1/a');
@@ -114,6 +113,7 @@ class PageModel{
    				preg_match('/\d{4}-\d{2}-\d{2} \d{2}:\d{2}/', $value->nodeValue, $match);
    				$this->latestArticle_dateAndTime = $match[0];
    			}
+
    			//lägg in i arrayobjektet
    			$this->courseList[] = new \Model\Course(
    				utf8_decode($this->name), 
@@ -124,7 +124,13 @@ class PageModel{
    				utf8_decode($this->latestArticle_header), 
    				utf8_decode($this->latestArticle_author), 
    				utf8_decode($this->latestArticle_dateAndTime)
-   				);
+   			);
+   			//empty variables
+   			$this->intro = '';
+   			$this->latestArticle_author = '';
+   			$this->latestArticle_header = '';
+   			$this->latestArticle_dateAndTime = '';
+
    			return $this->courseList;
 		} 
 		else {
