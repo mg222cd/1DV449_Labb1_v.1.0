@@ -69,7 +69,7 @@ class PageModel{
 			//kursnamn
 			$item = $xpath->query('//div[@id="header-wrapper"]//h1/a');
 			foreach ($item as $value) {
-    			$this->name = $value->nodeValue;
+    			$this->name = utf8_decode($value->nodeValue);
    			}
    			//länk
    			$this->url = $courseUrl;
@@ -89,13 +89,17 @@ class PageModel{
 				}
    			}
    			//introduktion
+   			$item = $xpath->query('//*[@id="content"]/article/div/p');
+   			foreach ($item as $value) {
+   				$this->introduction = utf8_decode($value->nodeValue);
+   			}
    			//senaste inlägg - rubrik
    			//senaste inlägg - författare
    			//senaste inlägg - datum och tid
    			//lägg in i arrayobjektet
    			//returnera
    			//temporär testkod:
-   			echo $this->name . $this->url . $this->code . $this->urlSyllabus . "<br />";
+   			echo utf8_decode($this->name) . $this->url . $this->code . $this->urlSyllabus . "<br />" . utf8_decode($this->introduction) . "<br /><br />";
 		} 
 		else {
 			die("Fel uppstod vid inläsning av HTML");
