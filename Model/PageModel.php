@@ -67,7 +67,7 @@ class PageModel{
 		//ini_set('max_execution_time', 300);
 		libxml_use_internal_errors(true);
 		$dom = new \DomDocument();
-		if ($dom->loadHTML($data)) {
+		if ($dom->loadHTML('<meta http-equiv="content-type" content="text/html; charset=utf-8">'.$data)) {
 			$xpath = new \DOMXPath($dom);
 			//kursnamn
 			$item = $xpath->query('//div[@id="header-wrapper"]//h1/a');
@@ -116,6 +116,7 @@ class PageModel{
 
    			//lägg in i arrayobjektet
    			$this->courseList[] = new \Model\Course(
+   				/*
    				utf8_decode($this->name), 
    				utf8_decode($this->url), 
    				utf8_decode($this->code), 
@@ -124,6 +125,15 @@ class PageModel{
    				utf8_decode($this->latestArticle_header), 
    				utf8_decode($this->latestArticle_author), 
    				utf8_decode($this->latestArticle_dateAndTime)
+   				*/
+   				$this->name, 
+   				$this->url, 
+   				$this->code, 
+   				$this->urlSyllabus, 
+   				$this->intro, 
+   				$this->latestArticle_header, 
+   				$this->latestArticle_author, 
+   				$this->latestArticle_dateAndTime
    			);
    			//empty variables
    			$this->intro = '';

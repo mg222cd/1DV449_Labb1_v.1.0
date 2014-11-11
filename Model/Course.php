@@ -2,24 +2,24 @@
 namespace Model;
 
 class Course{
-	public $name;
-	public $url;
-	public $code;
-	public $urlSyllabus;
-	public $introduction;
-	public $latestArticle_header;
-	public $latestArticle_author;
-	public $latestArticle_dateAndTime;
+	public $course_name;
+	public $course_url;
+	public $course_code;
+	public $url_syllabus;
+	public $introduction_text;
+	public $latest_article_header;
+	public $latest_article_author;
+	public $latest_article_date_and_time;
 
 	public function __construct($name, $url, $code, $urlSyllabus, $introduction, $latestArticle_header, $latestArticle_author, $latestArticle_dateAndTime){
-		$this->name = $name; 
-		$this->url = $url; 
-		$this->code = $code;
-		$this->urlSyllabus = $urlSyllabus;
-		$this->introduction = $introduction;
-		$this->latestArticle_header = $latestArticle_header;
-		$this->latestArticle_author = $latestArticle_author;
-		$this->latestArticle_dateAndTime = $latestArticle_dateAndTime;
+		$this->course_name = $name; 
+		$this->course_url = $url; 
+		$this->course_code = $code;
+		$this->url_syllabus = $urlSyllabus;
+		$this->introduction_text = $introduction;
+		$this->latest_article_header = $latestArticle_header;
+		$this->latest_article_author = $latestArticle_author;
+		$this->latest_article_date_and_time = $latestArticle_dateAndTime;
 	}
 	/*
 	public function getName(){
