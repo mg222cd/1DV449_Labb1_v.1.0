@@ -136,10 +136,10 @@ class PageModel{
    				$this->latestArticle_dateAndTime
    			);
    			//empty variables
-   			$this->intro = '';
-   			$this->latestArticle_author = '';
-   			$this->latestArticle_header = '';
-   			$this->latestArticle_dateAndTime = '';
+   			$this->intro = NULL;
+   			$this->latestArticle_author = NULL;
+   			$this->latestArticle_header = NULL;
+   			$this->latestArticle_dateAndTime = NULL;
 
    			return $this->courseList;
 		} 

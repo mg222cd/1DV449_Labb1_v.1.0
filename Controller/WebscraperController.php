@@ -35,14 +35,12 @@ class WebscraperController{
 			$this->courseInfo = $this->pageModel->getCourseInfo($data, $course);
 		}
 		// 5 - parse to JSON-format
-		
 		$json = array(
 			'site' => $this->url,
     		'latest_scrape' => date('Y/m/d H:i:s'),
     		'number_of_courses' => count($this->courseLinks),
     		'courses' => $this->courseInfo
 			);
-		
 		return json_encode($json, JSON_PRETTY_PRINT);
 	}
 }
