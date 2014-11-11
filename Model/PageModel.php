@@ -103,12 +103,19 @@ class PageModel{
    			foreach ($item as $value) {
    				$this->latestArticle_author = utf8_decode($value->nodeValue);
    			}
-   			//senaste inlägg - datum och tid
+   			//senaste inlägg - datum och tid. formatet YYYY-MM-DD HH:MM
+   			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/p');
+   			////*[@id="post-290"]/header/p/text()
+   			foreach ($item as $value) {
+   				preg_match('/\d{4}-\d{2}-\d{2} \d{2}:\d{2}/', $value->nodeValue, $match);
+   				$this->latestArticle_dateAndTime = $match[0];
+   			}
    			//lägg in i arrayobjektet
+   			
    			//returnera
    			//temporär testkod:
    			echo utf8_decode($this->name) . $this->url . $this->code . $this->urlSyllabus . utf8_decode($this->introduction) . 
-   			utf8_decode($this->latestArticle_header) . "<br />" . utf8_decode($this->latestArticle_author) . "<br /><br />";
+   			utf8_decode($this->latestArticle_header) . utf8_decode($this->latestArticle_author) . "<br />" . utf8_decode($this->latestArticle_dateAndTime) . "<br /><br />";
 		} 
 		else {
 			die("Fel uppstod vid inläsning av HTML");
