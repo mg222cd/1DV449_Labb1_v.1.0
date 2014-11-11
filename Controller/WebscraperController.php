@@ -34,12 +34,23 @@ class WebscraperController{
 			//skrapa informationen
 			$this->courseInfo = $this->pageModel->getCourseInfo($data, $course);
 		}
-		return json_encode($this->courseInfo);
+		//var_dump($this->courseInfo);
+		//die();
+		json_encode($this->courseInfo);
+		var_dump($this->courseInfo);
+		die();
 		/*
 		foreach ($this->courseInfo as $course) {
 			echo $course->getName();
 			echo $course->getUrl();
-		}*/
+			echo $course->getCode();
+			echo $course->getUrlSyllabus();
+			echo $course->getIntroduction();
+			echo $course->getLatestArticle_header();
+			echo $course->getLatestArticle_author();
+			echo $course->getLatestArticle_dateAndTime();
+		}
+		*/
 		//nu ligger allt i arrayen $this->courseLinks
 		//loopa igenom den och lägg all info på objekt.
 

@@ -2,14 +2,14 @@
 namespace Model;
 
 class Course{
-	private $name;
-	private $url;
-	private $code;
-	private $urlSyllabus;
-	private $introduction;
-	private $latestArticle_header;
-	private $latestArticle_author;
-	private $latestArticle_dateAndTime;
+	public $name;
+	public $url;
+	public $code;
+	public $urlSyllabus;
+	public $introduction;
+	public $latestArticle_header;
+	public $latestArticle_author;
+	public $latestArticle_dateAndTime;
 
 	public function __construct($name, $url, $code, $urlSyllabus, $introduction, $latestArticle_header, $latestArticle_author, $latestArticle_dateAndTime){
 		$this->name = $name; 
@@ -21,7 +21,7 @@ class Course{
 		$this->latestArticle_author = $latestArticle_author;
 		$this->latestArticle_dateAndTime = $latestArticle_dateAndTime;
 	}
-
+	/*
 	public function getName(){
 		return $this->name;
 	}	
@@ -53,4 +53,5 @@ class Course{
 	public function getLatestArticle_dateAndTime(){
 		return $this->latestArticle_dateAndTime;
 	}
+	*/
 }

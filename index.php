@@ -8,4 +8,4 @@ $controller = new \Controller\WebscraperController();
 $jsonView = new \View\JsonView();
 
 $jsonView->setContentHeader('application/json;');
-echo($controller->doControl());
+echo $controller->doControl();
