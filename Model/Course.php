@@ -12,7 +12,14 @@ class Course{
 	private $latestArticle_dateAndTime;
 
 	public function __construct($name, $url, $code, $urlSyllabus, $introduction, $latestArticle_header, $latestArticle_author, $latestArticle_dateAndTime){
-
+		$this->name = $name; 
+		$this->url = $url; 
+		$this->code = $code;
+		$this->urlSyllabus = $urlSyllabus;
+		$this->introduction = $introduction;
+		$this->latestArticle_header = $latestArticle_header;
+		$this->latestArticle_author = $latestArticle_author;
+		$this->latestArticle_dateAndTime = $latestArticle_dateAndTime;
 	}
 
 	public function getName(){

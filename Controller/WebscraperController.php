@@ -9,6 +9,7 @@ class WebscraperController{
 	private $pageModel;
 	private $url = "https://coursepress.lnu.se/kurser/";
 	private $courseLinks;
+	private $courseInfo = array();
 
 	public function __construct(){
 		$this->pageModel = new \Model\PageModel();
@@ -31,8 +32,11 @@ class WebscraperController{
 			//curl-getta adressen
 			$data = $this->curlView->curlGetRequest($course);
 			//skrapa informationen
-			$this->pageModel->getCourseInfo($data, $course);
-			
+			$this->courseInfo = $this->pageModel->getCourseInfo($data, $course);
+		}
+		foreach ($this->courseInfo as $course) {
+			echo $course->getName();
+			echo $course->getUrl();
 		}
 		//nu ligger allt i arrayen $this->courseLinks
 		//loopa igenom den och lägg all info på objekt.

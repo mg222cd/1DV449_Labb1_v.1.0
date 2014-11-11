@@ -4,9 +4,8 @@ namespace Model;
 require_once('Model/Course.php');
 
 class PageModel{
-	private $course;
+	private $courseList = array();
 	private $pages = array();
-	private $courses = array();
 	//fields to put into course-object
 	private $name;
 	private $url;
@@ -16,6 +15,10 @@ class PageModel{
 	private $latestArticle_header;
 	private $latestArticle_author;
 	private $latestArticle_dateAndTime;
+
+	public function __construct(){
+		//$this->courseList = array();
+	}
 	
 	public function getNumberOfPages($data){
 		ini_set('max_execution_time', 300);
@@ -111,11 +114,17 @@ class PageModel{
    				$this->latestArticle_dateAndTime = $match[0];
    			}
    			//lägg in i arrayobjektet
-   			
-   			//returnera
-   			//temporär testkod:
-   			echo utf8_decode($this->name) . $this->url . $this->code . $this->urlSyllabus . utf8_decode($this->introduction) . 
-   			utf8_decode($this->latestArticle_header) . utf8_decode($this->latestArticle_author) . "<br />" . utf8_decode($this->latestArticle_dateAndTime) . "<br /><br />";
+   			$this->courseList[] = new \Model\Course(
+   				utf8_decode($this->name), 
+   				$this->url, 
+   				$this->code, 
+   				$this->urlSyllabus, 
+   				utf8_decode($this->introduction), 
+   				utf8_decode($this->latestArticle_header), 
+   				utf8_decode($this->latestArticle_author), 
+   				utf8_decode($this->latestArticle_dateAndTime)
+   				);
+   			return $this->courseList;
 		} 
 		else {
 			die("Fel uppstod vid inläsning av HTML");
