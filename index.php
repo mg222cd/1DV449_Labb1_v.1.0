@@ -7,6 +7,9 @@ require_once('View/JsonView.php');
 $controller = new \Controller\WebscraperController();
 $jsonView = new \View\JsonView();
 
+$file = 'file.json';
+
 //$jsonView->setContentHeader('application/json;');
 header('Content-type: application/json; charset=UTF-8');
-echo $controller->doControl();
+file_put_contents($file, $controller->doControl());
+//echo $controller->doControl();
