@@ -72,10 +72,10 @@ class PageModel{
 			//kursnamn
 			$item = $xpath->query('//div[@id="header-wrapper"]//h1/a');
 			foreach ($item as $value) {
-    			$this->name = utf8_decode($value->nodeValue);
+    			$this->name = utf8_encode($value->nodeValue);
    			}
    			//länk
-   			$this->url = $courseUrl;
+   			$this->url = utf8_encode($courseUrl);
    			//kurskod
    			$item = $xpath->query('//div[@id="header-wrapper"]//li/a');
    			$tempArr = array();
@@ -88,23 +88,23 @@ class PageModel{
    			$item = $xpath->query('//ul[@class="sub-menu"]//li[@class="menu-item menu-item-type-custom menu-item-object-custom"]/a');
    			foreach ($item as $value) {
    				if (strpos($value->nodeValue, 'Kursplan') !== FALSE) {
-					$this->urlSyllabus = $value->getAttribute("href");
+					$this->urlSyllabus = utf8_encode($value->getAttribute("href"));
 				}
    			}
    			//introduktion
    			$item = $xpath->query('//*[@id="content"]/article/div/p');
    			foreach ($item as $value) {
-   				$this->introduction = utf8_decode($value->nodeValue);
+   				$this->introduction = utf8_encode($value->nodeValue);
    			}
    			//senaste inlägg - rubrik
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/h1/a');
    			foreach ($item as $value) {
-   				$this->latestArticle_header = utf8_decode($value->nodeValue);
+   				$this->latestArticle_header = utf8_encode($value->nodeValue);
    			}
    			//senaste inlägg - författare
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/p/strong');
    			foreach ($item as $value) {
-   				$this->latestArticle_author = utf8_decode($value->nodeValue);
+   				$this->latestArticle_author = utf8_encode($value->nodeValue);
    			}
    			//senaste inlägg - datum och tid. formatet YYYY-MM-DD HH:MM
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/p');
@@ -119,10 +119,10 @@ class PageModel{
    				$this->url, 
    				$this->code, 
    				$this->urlSyllabus, 
-   				utf8_decode($this->introduction), 
-   				utf8_decode($this->latestArticle_header), 
-   				utf8_decode($this->latestArticle_author), 
-   				utf8_decode($this->latestArticle_dateAndTime)
+   				$this->introduction, 
+   				$this->latestArticle_header, 
+   				$this->latestArticle_author, 
+   				$this->latestArticle_dateAndTime
    				);
    			return $this->courseList;
 		} 

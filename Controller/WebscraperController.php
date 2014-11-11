@@ -34,11 +34,11 @@ class WebscraperController{
 			//skrapa informationen
 			$this->courseInfo = $this->pageModel->getCourseInfo($data, $course);
 		}
+		// 5 - parse to JSON-format
 		//var_dump($this->courseInfo);
 		//die();
-		json_encode($this->courseInfo);
-		var_dump($this->courseInfo);
-		die();
+		return json_encode($this->courseInfo, JSON_PRETTY_PRINT);
+		//echo json_last_error(); 
 		/*
 		foreach ($this->courseInfo as $course) {
 			echo $course->getName();
