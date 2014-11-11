@@ -1,8 +1,11 @@
 <?php
-require_once('View/HTMLView.php');
+//require_once('View/HTMLView.php');
 require_once('Controller/WebscraperController.php');
+require_once('View/JsonView.php');
 
-$view = new \View\HTMLView();
+//$view = new \View\HTMLView();
 $controller = new \Controller\WebscraperController();
+$jsonView = new \View\JsonView();
 
-$view->echoHTML($controller->doControl());
+$jsonView->setContentHeader('application/json;');
+echo($controller->doControl());
