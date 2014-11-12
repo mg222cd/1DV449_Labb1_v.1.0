@@ -1,4 +1,5 @@
-<h1>1DV449 - Webbteknik II - Laboration 01</h1>
+<h6>1DV449 - Webbteknik II - Laboration 01</h6>
+<h1>Reflektion</h1>
 <h2>Vad tror Du vi har för skäl till att spara det skrapade datat i JSON-format?</h2>
 <p>
 Json är ett stort och välkänt format för datautbyte som man har en stor fördel av att kunna, framförallt senare i kursen då vi ska jobba mot API:er. En fördel med JSON är att det inte är låst till något programmeringsspråk. JSON är lätt att förstå både för människor och maskiner, och snabbare och tydligare än XML. Trenden pekar uppåt för JSON men neråt för XML. I den här labben särskiljde man ju informationen i samband med skrapningen, det är då onödigt att klumpa ihop allt till HTML igen, när man redan har det sorterat och klart.
