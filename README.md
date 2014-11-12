@@ -25,7 +25,7 @@ ViewStaten ställer till det. Som sades i peer-instruction 2 "Varje anrop kräve
 </p>
 <h2>Välj ut två punkter kring din kod du tycker är värd att diskutera vid redovisningen. Det kan röra val du gjort, tekniska lösningar eller lösningar du inte är riktigt nöjd med.</h2>
 <p>
-Jag valde att lagra varje xpath-skrapning som ett objekt, på samma vis som när man arbetar med databaser och repository patterns, jag tyckte detta var smidigt och gjorde koden lättbegriplig. Jag försökte även bygga skrapan med MVC-arkitektur. 
+Jag valde att lagra varje xpath-skrapning som ett objekt, på samma vis som när man arbetar med databaser och repository patterns, jag tyckte detta var smidigt och gjorde koden lättbegriplig. Jag försökte även bygga skrapan med MVC-arkitektur. Jag tror att man skulle kunna hitta en bättre lösning än den jag gjort i fråga om pagingen, t.ex använda "next"-knappen istället för att kolla upp numret på sista sidnumret och därefter loopa igenom alla sidor i actionet.
 </p>
 <h2>Hitta ett rättsfall som handlar om webbskrapning. Redogör kort för detta.</h2>
 <p>
@@ -33,5 +33,6 @@ Har ej hittat något exempel på detta i Sverige, men endel internationella rät
 </p>
 <h2>Känner du att du lärt dig något av denna uppgift?</h2>
 <p>
+Massor! Bra introduktion inför att jobba mot API:er. Jag har fått många idéer om roliga webbapplikationer att bygga med den här tekniken. Saknade dock en demofilm om JSON.
 </p>
 
