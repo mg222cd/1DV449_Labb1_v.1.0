@@ -7,7 +7,7 @@ $jsonView = new \View\JsonView();
 
 //main-functions.
 $file = 'file.json';
-$jsonView->setContentHeader('application/json;');
+$jsonView->setContentHeader('application/json');
 $data = file_get_contents($file);
 
 //testcode to demonstrate new scrape:
@@ -16,6 +16,7 @@ $data = $controller->doControl();
 file_put_contents($file, $data);
 echo $data;
 */
+
 
 //security-check if json is empty
 if (!empty($data)) {
