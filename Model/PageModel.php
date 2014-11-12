@@ -16,9 +16,6 @@ class PageModel{
 	private $latestArticle_author;
 	private $latestArticle_dateAndTime;
 
-	public function __construct(){
-		//$this->courseList = array();
-	}
 	
 	public function getNumberOfPages($data){
 		ini_set('max_execution_time', 300);
@@ -64,7 +61,7 @@ class PageModel{
 	}
 
 	public function getCourseInfo($data, $courseUrl){
-		//ini_set('max_execution_time', 300);
+		ini_set('max_execution_time', 300);
 		libxml_use_internal_errors(true);
 		$dom = new \DomDocument();
 		if ($dom->loadHTML('<meta http-equiv="content-type" content="text/html; charset=utf-8">'.$data)) {
@@ -108,24 +105,13 @@ class PageModel{
    			}
    			//senaste inlägg - datum och tid. formatet YYYY-MM-DD HH:MM
    			$item = $xpath->query('//*[@id="content"]/section/article[1]/header/p');
-   			////*[@id="post-290"]/header/p/text()
    			foreach ($item as $value) {
    				preg_match('/\d{4}-\d{2}-\d{2} \d{2}:\d{2}/', $value->nodeValue, $match);
    				$this->latestArticle_dateAndTime = $match[0];
    			}
 
-   			//lägg in i arrayobjektet
+   			//add to arrayobject
    			$this->courseList[] = new \Model\Course(
-   				/*
-   				utf8_decode($this->name), 
-   				utf8_decode($this->url), 
-   				utf8_decode($this->code), 
-   				utf8_decode($this->urlSyllabus), 
-   				utf8_encode($this->intro), 
-   				utf8_decode($this->latestArticle_header), 
-   				utf8_decode($this->latestArticle_author), 
-   				utf8_decode($this->latestArticle_dateAndTime)
-   				*/
    				$this->name, 
    				$this->url, 
    				$this->code, 
@@ -140,7 +126,7 @@ class PageModel{
    			$this->latestArticle_author = NULL;
    			$this->latestArticle_header = NULL;
    			$this->latestArticle_dateAndTime = NULL;
-
+   			
    			return $this->courseList;
 		} 
 		else {
