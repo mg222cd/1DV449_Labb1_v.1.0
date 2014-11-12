@@ -29,10 +29,10 @@ Jag valde att lagra varje xpath-skrapning som ett objekt, på samma vis som när
 </p>
 <h2>Hitta ett rättsfall som handlar om webbskrapning. Redogör kort för detta.</h2>
 <p>
-Har ej hittat något exempel på detta i Sverige, men endel internationella rättsfall finns listade här <a href="http://en.wikipedia.org/wiki/Web_scraping#Legal_issues">http://en.wikipedia.org/wiki/Web_scraping#Legal_issues</a> Ett exempel där är eBay v. Bidder's Edge, där Edge för att stoppades från åtkomst, insamling och indexering av auktioner från webbplatsen eBay. Man hade även lagt automatiska bud. Detta sågs som "olaga intrång av lösöre" (fick inte till bättre översättning) på samma sätt som om det skulle ha varit utfört av en fysisk person och inte en robot. Dock verkar detta ej gälla all skrapning av information, utan enbart där man kunnat bevisa att den ägaren av den skrapade webbplatsen tagit skada.
+Har ej hittat något exempel på detta i Sverige, men några internationella rättsfall finns listade här: <a href="http://en.wikipedia.org/wiki/Web_scraping#Legal_issues">http://en.wikipedia.org/wiki/Web_scraping#Legal_issues</a>. Ett exempel där är eBay v. Bidder's Edge, där Edge stoppades från åtkomst, insamling och indexering av auktioner från webbplatsen eBay. Edge hade även lagt automatiska bud. Detta sågs som "olaga intrång av lösöre" (ursäkta dålig översättning) på samma sätt som om det skulle ha varit utfört av en fysisk person och inte en robot. Dock verkar detta ej gälla all skrapning av information, utan enbart där man kunnat bevisa att ägaren av den skrapade webbplatsen tagit skada.
 </p>
 <h2>Känner du att du lärt dig något av denna uppgift?</h2>
 <p>
-Massor! Bra introduktion inför att jobba mot API:er. Jag har fått många idéer om roliga webbapplikationer att bygga med den här tekniken. Saknade dock en demofilm om JSON.
+Jag har lärt mig massor! Bra introduktion inför att jobba vidare mot API:er. Jag har fått många idéer om roliga webbapplikationer att bygga med den här tekniken. Saknade dock en demofilm om JSON.
 </p>
 
