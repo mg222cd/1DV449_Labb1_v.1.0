@@ -1,8 +1,68 @@
 {
     "site": "https:\/\/coursepress.lnu.se\/kurser\/",
-    "latest_scrape": "2014\/11\/12 16:38:10",
+    "latest_scrape": "2014\/11\/13 15:04:09",
     "number_of_courses": 68,
     "courses": [
+        {
+            "course_name": "Mjukvarutestning (Software Testing)",
+            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/mjukvarutestning\/",
+            "course_code": "2DV110",
+            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=2DV110&documenttype=pdf&lang=sv",
+            "introduction_text": "The aim of the course is to provide students with basic knowledge in software testing.",
+            "latest_article_header": "no information",
+            "latest_article_author": "no information",
+            "latest_article_date_and_time": "no information"
+        },
+        {
+            "course_name": "Grafisk design",
+            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/grafisk-design\/",
+            "course_code": "1DI101",
+            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DI101&documenttype=pdf&lang=sv",
+            "introduction_text": "Kursen Grafisk Design ing\u00e5r som obligatorisk kurs under andra \u00e5ret vid utbildningsprogrammet Interaktionsdesigner vid Linn\u00e9universitetet. M\u00e5let med kursen \u00e4r att studenten skall f\u00e5 en god f\u00f6rst\u00e5else f\u00f6r hur man skapar och tolkar bild f\u00f6r digitalt och analogt bruk. Studenten skall \u00e4ven kunna anv\u00e4nda sig av designprocessen f\u00f6r att presentera bild och text via webbl\u00f6sningar, datorprogram samt f\u00f6r tryck. Fokus ligger p\u00e5 bildbehandling utifr\u00e5n ett professionellt perspektiv med fokus p\u00e5 bildanalys och f\u00f6rst\u00e5else. Kursen best\u00e5r av f\u00f6ljande tv\u00e5 delkurser:",
+            "latest_article_header": "no information",
+            "latest_article_author": "no information",
+            "latest_article_date_and_time": "no information"
+        },
+        {
+            "course_name": "Avancerade LAN-teknologier",
+            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/avancerade-lan-teknologier\/",
+            "course_code": "1DV447",
+            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV447&documenttype=pdf&lang=sv",
+            "introduction_text": "\u00c5rets upplaga, den kanske sista, av kursen drar ig\u00e5ng den 4 november klockan 13:15 i Ny104.Kursen \u00e4r en f\u00f6rdjupning inom virtuella lokala n\u00e4tverk, loopfria n\u00e4tverk och redundans. I f\u00f6rsta halvan av kursen kommer fokus fr\u00e4mst ligga p\u00e5 teori och under andra halvan p\u00e5 praktiskt arbete \u00e4ven om laborationshandledning kommer f\u00f6rekomma kontinuerligt under hela kursen. Kursen har fyra examinerande moment (seminarium, tentamen, projekt och laboration) s\u00e5 det \u00e4r m\u00e5nga examinationer att f\u00f6rbereda sig f\u00f6r utspridda \u00f6ver hela kurstiden. F\u00f6r att bli godk\u00e4nd p\u00e5 kursen \u00e4r tanken att man sj\u00e4lvst\u00e4ndigt ska kunna designa och konfigurera ett flerlagerswitchat n\u00e4tverk.",
+            "latest_article_header": "no information",
+            "latest_article_author": "no information",
+            "latest_article_date_and_time": "no information"
+        },
+        {
+            "course_name": "Klientbaserad webbutveckling",
+            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/klientbaserad-webbutveckling\/",
+            "course_code": "1DV435",
+            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV435&documenttype=pdf&lang=sv",
+            "introduction_text": "I denna kurs kommer fokus ligga p\u00e5 teknik och praktik kring byggandet av webbplatser med fokus p\u00e5 klientbaserad webbutveckling. Kursen fokuserar dels p\u00e5 modern utveckling med HTML5 och CSS samt \u00e4ven p\u00e5 grundl\u00e4ggande programmering med JavaScript som programmeringsspr\u00e5k. Kursen avslutas med ett st\u00f6rre projekt d\u00e4r dessa tekniker anv\u00e4nds.",
+            "latest_article_header": "Programmeringsstuga",
+            "latest_article_author": "Johan Leitet",
+            "latest_article_date_and_time": "2014-11-12 06:09"
+        },
+        {
+            "course_name": "Strukturerad programmering med C++",
+            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/strukturerad-programmering-med-cplusplus\/",
+            "course_code": "1DV433",
+            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV433&documenttype=pdf&lang=sv",
+            "introduction_text": "I denna grundkurs l\u00e4r du dig skapa console-baserade datorprogram p\u00e5 ett procedurorienterat s\u00e4tt med programspr\u00e5ket C++. Kursen best\u00e5r av teorimoment (3,5p) och praktiska till\u00e4mpningar (4p). Allt kursmaterial utom kurslitteraturen h\u00e4mtas p\u00e5 denna webbplats \u2013 logga in med ditt studentkonto f\u00f6r att f\u00e5 tillg\u00e5ng till detta. (Bara\u00a0registrerade kursdeltagare\u00a0har tillg\u00e5ng till diskussionsgrupp eller gruppindelningar -\u00a0anonyma bes\u00f6kare har\u00a0begr\u00e4nsad \u00e5tkomst till\u00a0webbmaterialet.)",
+            "latest_article_header": "Inf\u00f6r f\u00f6rsta examinationen",
+            "latest_article_author": "Anne Norling",
+            "latest_article_date_and_time": "2014-11-12 05:12"
+        },
+        {
+            "course_name": "Webbteknik I",
+            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/webbteknik-i\/",
+            "course_code": "1DV403",
+            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV403&documenttype=pdf&lang=sv",
+            "introduction_text": "Kursen Webbteknik I \u00e4r en kurs som inom ramen f\u00f6r programmen \u201dWebbprogrammerare\u201d och \u201dUtvecklare av digitala tj\u00e4nster\u201d vid Linn\u00e9universitetet i Kalmar och genomf\u00f6rs p\u00e5 campus s\u00e5v\u00e4l som distans.En av de senaste \u00e5rens webbtrender \u00e4r att fler och fler applikationen flyttar fr\u00e5n den lokala datorn till webben vilket inneb\u00e4r att anv\u00e4ndandet och betydelsen av Javascript \u00f6kar. Detta st\u00e4ller h\u00f6gre krav p\u00e5 webbutvecklaren i form av disciplin och kunnande.Kursen behandlar Javascript fr\u00e5n grunden och tar dig fr\u00e5n \u201dHello World\u201d till att skapa en fullfj\u00e4drad Javascriptapplikation i form av ett webbbaserat f\u00f6nsterhanteringssystem med Ajax. Genomg\u00e5ende l\u00e4r du dig ett modernt arbetss\u00e4tt och betydelsen av att skapa tillg\u00e4ngliga och s\u00e4kra applikationer. I slutprojektet har du m\u00f6jlighet att f\u00f6rkovra dig i ett javascript bibliotek s\u00e5 som exempelvis jQuery, men kursens m\u00e5l \u00e4r att l\u00e4ra sig JavaScript fr\u00e5n grunden.P\u00e5 denna webbplats hittar du all information kring kursen. \u00c4r du student p\u00e5 kursen b\u00f6r du logga in f\u00f6r att f\u00e5 tillg\u00e5ng till gruppindelningar, forum etc.\u00c4r du h\u00e4r som bes\u00f6kare kan du f\u00f6lja med i kursen genom att f\u00f6lja materialet p\u00e5 denna webbplats. F\u00f6rel\u00e4sningar publiceras i takt med att de genomf\u00f6rs p\u00e5 campus i Kalmar.",
+            "latest_article_header": "Programmeringsstuga",
+            "latest_article_author": "Johan Leitet",
+            "latest_article_date_and_time": "2014-11-12 04:52"
+        },
         {
             "course_name": "Design av grafiska gr\u00e4nssnitt",
             "course_url": "https:\/\/coursepress.lnu.se\/kurs\/design-av-grafiska-granssnitt\/",
@@ -34,26 +94,6 @@
             "latest_article_date_and_time": "no information"
         },
         {
-            "course_name": "Grafisk design",
-            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/grafisk-design\/",
-            "course_code": "1DI101",
-            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DI101&documenttype=pdf&lang=sv",
-            "introduction_text": "Kursen Grafisk Design ing\u00e5r som obligatorisk kurs under andra \u00e5ret vid utbildningsprogrammet Interaktionsdesigner vid Linn\u00e9universitetet. M\u00e5let med kursen \u00e4r att studenten skall f\u00e5 en god f\u00f6rst\u00e5else f\u00f6r hur man skapar och tolkar bild f\u00f6r digitalt och analogt bruk. Studenten skall \u00e4ven kunna anv\u00e4nda sig av designprocessen f\u00f6r att presentera bild och text via webbl\u00f6sningar, datorprogram samt f\u00f6r tryck. Fokus ligger p\u00e5 bildbehandling utifr\u00e5n ett professionellt perspektiv med fokus p\u00e5 bildanalys och f\u00f6rst\u00e5else. Kursen best\u00e5r av f\u00f6ljande tv\u00e5 delkurser:",
-            "latest_article_header": "no information",
-            "latest_article_author": "no information",
-            "latest_article_date_and_time": "no information"
-        },
-        {
-            "course_name": "Strukturerad programmering med C++",
-            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/strukturerad-programmering-med-cplusplus\/",
-            "course_code": "1DV433",
-            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV433&documenttype=pdf&lang=sv",
-            "introduction_text": "I denna grundkurs l\u00e4r du dig skapa console-baserade datorprogram p\u00e5 ett procedurorienterat s\u00e4tt med programspr\u00e5ket C++. Kursen best\u00e5r av teorimoment (3,5p) och praktiska till\u00e4mpningar (4p). Allt kursmaterial utom kurslitteraturen h\u00e4mtas p\u00e5 denna webbplats \u2013 logga in med ditt studentkonto f\u00f6r att f\u00e5 tillg\u00e5ng till detta. (Bara\u00a0registrerade kursdeltagare\u00a0har tillg\u00e5ng till diskussionsgrupp eller gruppindelningar -\u00a0anonyma bes\u00f6kare har\u00a0begr\u00e4nsad \u00e5tkomst till\u00a0webbmaterialet.)",
-            "latest_article_header": "Schema\u00e4ndring \u2026",
-            "latest_article_author": "Anne Norling",
-            "latest_article_date_and_time": "2014-11-07 01:26"
-        },
-        {
             "course_name": "Grafiska verktyg",
             "course_url": "https:\/\/coursepress.lnu.se\/kurs\/grafiska-verktyg\/",
             "course_code": "1ME402",
@@ -74,51 +114,11 @@
             "latest_article_date_and_time": "2014-11-11 07:26"
         },
         {
-            "course_name": "Webbteknik I",
-            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/webbteknik-i\/",
-            "course_code": "1DV403",
-            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV403&documenttype=pdf&lang=sv",
-            "introduction_text": "Kursen Webbteknik I \u00e4r en kurs som inom ramen f\u00f6r programmen \u201dWebbprogrammerare\u201d och \u201dUtvecklare av digitala tj\u00e4nster\u201d vid Linn\u00e9universitetet i Kalmar och genomf\u00f6rs p\u00e5 campus s\u00e5v\u00e4l som distans.En av de senaste \u00e5rens webbtrender \u00e4r att fler och fler applikationen flyttar fr\u00e5n den lokala datorn till webben vilket inneb\u00e4r att anv\u00e4ndandet och betydelsen av Javascript \u00f6kar. Detta st\u00e4ller h\u00f6gre krav p\u00e5 webbutvecklaren i form av disciplin och kunnande.Kursen behandlar Javascript fr\u00e5n grunden och tar dig fr\u00e5n \u201dHello World\u201d till att skapa en fullfj\u00e4drad Javascriptapplikation i form av ett webbbaserat f\u00f6nsterhanteringssystem med Ajax. Genomg\u00e5ende l\u00e4r du dig ett modernt arbetss\u00e4tt och betydelsen av att skapa tillg\u00e4ngliga och s\u00e4kra applikationer. I slutprojektet har du m\u00f6jlighet att f\u00f6rkovra dig i ett javascript bibliotek s\u00e5 som exempelvis jQuery, men kursens m\u00e5l \u00e4r att l\u00e4ra sig JavaScript fr\u00e5n grunden.P\u00e5 denna webbplats hittar du all information kring kursen. \u00c4r du student p\u00e5 kursen b\u00f6r du logga in f\u00f6r att f\u00e5 tillg\u00e5ng till gruppindelningar, forum etc.\u00c4r du h\u00e4r som bes\u00f6kare kan du f\u00f6lja med i kursen genom att f\u00f6lja materialet p\u00e5 denna webbplats. F\u00f6rel\u00e4sningar publiceras i takt med att de genomf\u00f6rs p\u00e5 campus i Kalmar.",
-            "latest_article_header": "Missa inte introduktionsf\u00f6rel\u00e4sningen",
-            "latest_article_author": "Johan Leitet",
-            "latest_article_date_and_time": "2014-11-04 03:54"
-        },
-        {
-            "course_name": "Klientbaserad webbutveckling",
-            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/klientbaserad-webbutveckling\/",
-            "course_code": "1DV435",
-            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV435&documenttype=pdf&lang=sv",
-            "introduction_text": "I denna kurs kommer fokus ligga p\u00e5 teknik och praktik kring byggandet av webbplatser med fokus p\u00e5 klientbaserad webbutveckling. Kursen fokuserar dels p\u00e5 modern utveckling med HTML5 och CSS samt \u00e4ven p\u00e5 grundl\u00e4ggande programmering med JavaScript som programmeringsspr\u00e5k. Kursen avslutas med ett st\u00f6rre projekt d\u00e4r dessa tekniker anv\u00e4nds.",
-            "latest_article_header": "Ytterligare f\u00f6rtydling",
-            "latest_article_author": "John H\u00e4ggerud",
-            "latest_article_date_and_time": "2014-11-10 04:29"
-        },
-        {
             "course_name": "Grundl\u00e4ggande spelprogrammering",
             "course_url": "https:\/\/coursepress.lnu.se\/kurs\/grundlaggande-spelprogrammering\/",
             "course_code": "1DV437",
             "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV437&documenttype=pdf&lang=sv",
             "introduction_text": "Kursen i grundl\u00e4ggande spelprogrammering syftar till att ge studenterna en f\u00f6rsta inblick i spelprogrammering men \u00e4ven en god bas att bygga dator\/tv\/mobil-spel och andra interaktiva applikationer. Kursen \u00e4r i sig programspr\u00e5ks och plattforms-oberoende. Detta betyder att studenten sj\u00e4lv har en m\u00f6jlighet att v\u00e4lja implementationsspr\u00e5k och plattform. Tidigare \u00e5r har spel till Android, XBox 360 och PC-plattformarna utvecklats av v\u00e5ra studenter.\nValet av programspr\u00e5k och plattform \u00e4r mer beroende av studentens kunskaper och f\u00f6r att l\u00e4sa kursen b\u00f6r studenten ha goda kunskaper i implementationsspr\u00e5ket.Kursen best\u00e5r utav tre laborationer och ett projekt.",
-            "latest_article_header": "no information",
-            "latest_article_author": "no information",
-            "latest_article_date_and_time": "no information"
-        },
-        {
-            "course_name": "Mjukvarutestning (Software Testing)",
-            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/mjukvarutestning\/",
-            "course_code": "2DV110",
-            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=2DV110&documenttype=pdf&lang=sv",
-            "introduction_text": "The aim of the course is to provide students with basic knowledge in software testing.",
-            "latest_article_header": "no information",
-            "latest_article_author": "no information",
-            "latest_article_date_and_time": "no information"
-        },
-        {
-            "course_name": "Avancerade LAN-teknologier",
-            "course_url": "https:\/\/coursepress.lnu.se\/kurs\/avancerade-lan-teknologier\/",
-            "course_code": "1DV447",
-            "url_syllabus": "http:\/\/prod.kursinfo.lnu.se\/utbildning\/GenerateDocument.ashx?templatetype=coursesyllabus&code=1DV447&documenttype=pdf&lang=sv",
-            "introduction_text": "\u00c5rets upplaga, den kanske sista, av kursen drar ig\u00e5ng den 4 november klockan 13:15 i Ny104.Kursen \u00e4r en f\u00f6rdjupning inom virtuella lokala n\u00e4tverk, loopfria n\u00e4tverk och redundans. I f\u00f6rsta halvan av kursen kommer fokus fr\u00e4mst ligga p\u00e5 teori och under andra halvan p\u00e5 praktiskt arbete \u00e4ven om laborationshandledning kommer f\u00f6rekomma kontinuerligt under hela kursen. Kursen har fyra examinerande moment (seminarium, tentamen, projekt och laboration) s\u00e5 det \u00e4r m\u00e5nga examinationer att f\u00f6rbereda sig f\u00f6r utspridda \u00f6ver hela kurstiden. F\u00f6r att bli godk\u00e4nd p\u00e5 kursen \u00e4r tanken att man sj\u00e4lvst\u00e4ndigt ska kunna designa och konfigurera ett flerlagerswitchat n\u00e4tverk.",
             "latest_article_header": "no information",
             "latest_article_author": "no information",
             "latest_article_date_and_time": "no information"
